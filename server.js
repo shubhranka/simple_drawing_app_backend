@@ -52,7 +52,7 @@ app.post('/check', async (req, res) => {
             mimeType: "image/jpeg",
         },
     },
-    `Is it a sketch of a ${thing} or just close to a ${thing}? just answer "yes" or "no."`,
+    `Is it a sketch of a ${thing}? just answer "yes" or "no."`,
 ]);
 const response = result.response.text()
 console.log(response);
