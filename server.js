@@ -17,7 +17,7 @@ app.use(express.json());
 // Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 
-const model = genAI.getGenerativeModel({ model: 'models/gemini-1.5-flash' });
+const model = genAI.getGenerativeModel({ model: process.env.MODEL });
 
 const alreadyGivenEasyThings = [];
 const alreadyGivenMediumThings = [];
